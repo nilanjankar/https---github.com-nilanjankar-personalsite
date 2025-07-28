@@ -6,10 +6,51 @@
     <title>About Me - Your Name</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-        nav { margin-bottom: 20px; }
-        nav a { margin-right: 15px; text-decoration: none; color: #007bff; }
+        nav {
+            margin-bottom: 20px;
+            background-color: #fff; /* White background for the nav bar */
+            padding: 10px 20px; /* Padding inside the nav bar */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold; /* Bold text for links */
+        }
         nav a:hover { text-decoration: underline; }
-    </style>
+        /* New CSS for the 'About Me' box */
+        .about-me-box {
+            background-color: #e6f2ff; /* Very light blue background for the box */
+            padding: 30px; /* Space inside the box */
+            border-radius: 8px; /* Slightly rounded corners for the box */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* More pronounced shadow for the box */
+            margin-top: 30px; /* Space above the box */
+            max-width: 900px; /* Max width for readability, adjust as needed */
+            margin-left: auto; /* Center the box */
+            margin-right: auto; /* Center the box */
+        }
+
+        .about-me-box h1 {
+            color: #0056b3; /* Color for the heading inside the box */
+            margin-top: 0; /* Remove default top margin for heading */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        .about-me-box p {
+            margin-bottom: 15px; /* Space between paragraphs inside the box */
+        }
+
+        .about-me-box p:last-child {
+            margin-bottom: 0; /* No margin below the last paragraph */
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #007bff; /* Or any color that stands out */
+        }
+</style>
 </head>
 <body>
     <nav>
@@ -18,15 +59,18 @@
         <a href="certifications.html">Certifications</a>
     </nav>
 
-    <h1>About Me</h1>
-    <p>Welcome to my personal site! Here you'll find information about my background, skills, and what drives my passion for technology and learning.</p>
-    <p> [Add more about yourself here, e.g., your professional experience, education, hobbies.] </p>
-    <p>Feel free to explore my AI research and certifications using the navigation links above.</p>
-    <h2>My Works (General)</h2>
-    <ul>
-        <li><a href="https://example.com/project1" target="_blank">Project 1 Title</a> - A brief description of Project 1.</li>
-        <li><a href="https://example.com/article2" target="_blank">Article/Blog Post Title</a> - A brief description of the article.</li>
-        <li><a href="https://github.com/yourusername/repo-name" target="_blank">GitHub Repository Link</a> - Description of the repository.</li>
-    </ul>
+     <div class="about-me-box">
+        <h1>About Me</h1>
+        <p>
+            Welcome! I'm an <span class="highlight">IT professional with 27 years of experience</span>, continually evolving across diverse roles, from Developer, Analyst, Architect to Manager/TPM. In these capacities, I focused on strategic project delivery and navigating complex systems to ensure successful outcomes.
+        </p>
+        <p>
+            Currently, my passion lies in advancing Artificial Intelligence by integrating <span class="highlight">logic, reasoning, and grounded understanding</span>. I work to address current AI limitations, especially where Large Language Models (LLMs) struggle with physical consistency and complex problem-solving.
+        </p>
+        <p>
+            Through independent projects, I explore and build AI systems that prioritize **robustness, explainability, and deterministic outcomes**. Feel free to explore my unique contributions to AI reasoning in the <a href="ai-research.html">AI Research & Interests</a> section, or review my professional certifications.
+        </p>
+        <p>I can be reached at nilanjankar@outlook.com</p>
+    </div>
 </body>
 </html>
