@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Research & Interests - Your Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f4f4f4; /* Light background for the page */
+            color: #333;
+        }
+        nav {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        /* Style for individual shelves */
+        .shelf-wrapper {
+            margin-bottom: 40px; /* Space between shelves */
+            padding: 10px 0;
+        }
+
+        .bookshelf-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows books to wrap to the next line */
+            gap: 30px; /* Space between books */
+            justify-content: center; /* Center books on the shelf */
+            padding: 20px;
+            background-color: #d2b48c; /* Wood-like color for the shelf */
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Shadow for depth */
+            position: relative; /* For the shelf line */
+            padding-bottom: 50px; /* Space for the shelf line */
+        }
+        .bookshelf-container::before {
+            content: '';
+            position: absolute;
+            bottom: 20px; /* Position of the shelf line */
+            left: 5%;
+            right: 5%;
+            height: 5px;
+            background-color: #8b4513; /* Darker wood for the shelf edge */
+            border-radius: 2px;
+        }
+        .book {
+            width: 150px; /* Width of each book */
+            height: 200px; /* Height of each book */
+            background-color: #8a2be2; /* Default book spine color (purple) */
+            border: 2px solid #5d1a99; /* Darker border for the spine */
+            border-radius: 5px;
+            box-shadow: 3px 3px 8px rgba(0,0,0,0.3); /* Shadow for 3D effect */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box; /* Include padding in width/height */
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            position: relative;
+            cursor: pointer;
+            text-decoration: none; /* Remove underline from the link */
+        }
+        .book:hover {
+            transform: translateY(-10px) rotateZ(-2deg); /* Lift and slightly rotate on hover */
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+        }
+        .book-title {
+            color: #fff; /* White text for title */
+            font-weight: bold;
+            font-size: 1em;
+            margin-bottom: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* Limit title to 2 lines */
+            -webkit-box-orient: vertical;
+        }
+        .book-description {
+            color: #eee; /* Lighter text for description */
+            font-size: 0.8em;
+            /* REMOVE OR COMMENT OUT THESE LINES TO ALLOW WRAPPING: */
+            /* white-space: nowrap; */
+            /* overflow: hidden; */
+            /* text-overflow: ellipsis; */
+            /* width: 100%; */
+            /* ADD THIS TO ALLOW MULTIPLE LINES: */
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* Limit description to 3 lines (adjust as needed) */
+            -webkit-box-orient: vertical;
+            word-wrap: break-word; /* Ensure long words break */
+        }
+
+        /* Example custom book colors (optional) */
+        .book.color-blue { background-color: #4682b4; border-color: #2c547a; }
+        .book.color-green { background-color: #3cb371; border-color: #277b4e; }
+        .book.color-red { background-color: #cd5c5c; border-color: #a54747; }
+        .book.color-orange { background-color: #ff8c00; border-color: #cc7000; }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .bookshelf-container {
+                gap: 20px;
+            }
+            .book {
+                width: 120px;
+                height: 180px;
+            }
+        }
+        @media (max-width: 480px) {
+            .bookshelf-container {
+                gap: 15px;
+            }
+            .book {
+                width: 100px;
+                height: 150px;
+            }
+            .book-title {
+                font-size: 0.9em;
+            }
+            .book-description {
+                font-size: 0.7em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="ai-research.html">AI Research & Interests</a>
+        <a href="certifications.html">Certifications</a>
+    </nav>
+
+    <h1>AI Research & Interests</h1>
+    <p>Here you'll find details about my involvement and interests in Artificial Intelligence, Machine Learning, and related fields. Explore my projects presented as books on a virtual shelf!</p>
+
+    <h2>My AI Research Projects</h2>
+    <div class="shelf-wrapper">
+        <h3>Recent Projects</h3>
+        <div class="bookshelf-container">
+            <a href="https://github.com/yourusername/nlp-sentiment-analysis" target="_blank" class="book color-blue">
+                <div class="book-title">NLP Sentiment Analysis</div>
+                <div class="book-description">Analyzing emotions in text data.</div>
+            </a>
+
+            <a href="https://your-blog.com/post/computer-vision-project" target="_blank" class="book color-green">
+                <div class="book-title">Computer Vision for Object Detection</div>
+                <div class="book-description">Identifying objects in images and videos using advanced techniques.</div>
+            </a>
+
+            <a href="https://your-portfolio.com/reinforcement-learning-game" target="_blank" class="book color-red">
+                <div class="book-title">Reinforcement Learning in Games</div>
+                <div class="book-description">AI agent learning to play a complex strategy game through sequential decisions.</div>
+            </a>
+
+            <a href="https://medium.com/@yourusername/ai-ethics-article" target="_blank" class="book color-orange">
+                <div class="book-title">Ethical AI Considerations</div>
+                <div class="book-description">Exploring fairness and bias mitigation in artificial intelligence systems.</div>
+            </a>
+            </div>
+    </div>
+
+    <div class="shelf-wrapper">
+        <h3>Older Projects / Explorations</h3>
+        <div class="bookshelf-container">
+            <a href="https://your-project-site.com/generative-ai-old" target="_blank" class="book">
+                <div class="book-title">Generative AI Art (Early)</div>
+                <div class="book-description">Early experiments with Generative Adversarial Networks (GANs) for creative outputs.</div>
+            </a>
+
+            <a href="https://your-another-project.com/data-preprocessing-tool" target="_blank" class="book color-blue">
+                <div class="book-title">Data Preprocessing Tool</div>
+                <div class="book-description">A utility for cleaning, transforming, and preparing datasets for machine learning models.</div>
+            </a>
+
+            </div>
+    </div>
+
+    <h2>AI Learning Resources/Interests</h2>
+    <ul>
+        <li>Topic 1: Deep Learning for Natural Language Processing</li>
+        <li>Topic 2: Reinforcement Learning Applications</li>
+        <li>Topic 3: Ethical AI and Bias Mitigation</li>
+        </ul>
+</body>
+</html>
