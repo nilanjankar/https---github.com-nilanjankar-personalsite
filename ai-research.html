@@ -78,6 +78,19 @@
             cursor: pointer;
             text-decoration: none; /* Remove underline from the link */
         }
+        .beta-badge {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background-color: #ff6b6b;
+            color: white;
+            font-size: 0.65em;
+            font-weight: bold;
+            padding: 3px 6px;
+            border-radius: 3px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
         .book:hover {
             transform: translateY(-10px) rotateZ(-2deg); /* Lift and slightly rotate on hover */
             box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
@@ -150,13 +163,14 @@
     </nav>
 
     <h1>AI Research & Interests</h1>
-    <p>Here you'll find details about my involvement and interests in Artificial Intelligence, Machine Learning, and related fields. Explore my projects presented as books on a virtual shelf!</p>
+    <p>Here you'll find details about my involvement and interests in Artificial Intelligence, Machine Learning, and related fields. Below are some research projects, applications, and publications I've designed, built, or advised!</p>
     <div class="shelf-wrapper">
         <h3>Research Projects</h3>
         <div class="bookshelf-container">
             <div style="text-align: center;">
-                <a href="https://medium.com/@nilanjan.kar/toward-ai-reasoning-101-capturing-state-transitions-df7c949a889b" 
+                <a href="https://medium.com/@nilanjan.kar/toward-ai-reasoning-101-capturing-state-transitions-df7c949a889b"
                     target="_blank" class="book color-blue" title="A symbolic AI approach to solve logic puzzles via grounded reasoning.">
+                    <span class="beta-badge">BETA</span>
                     <div class="book-title">Puzzle Solver AI</div>
                     <div class="book-description">Using AI with grounding to solve "Man In Boat" puzzles</div>
                 </a>
@@ -172,7 +186,7 @@
                     title="Interactive app showing 3D scene generation and collision detection using symbolic AI. Click to learn more!">
                     <div class="book-title">SpatialScene</div>
                     <div class="book-description">
-                    Visualize 3D Scenes from Natural Language.
+                        Visualize 3D Scenes from Natural Language.
                     </div>
                 </a>
                 <div style="margin-top: 6px;">
@@ -191,6 +205,21 @@
                    title="Interact with multi-lingual chatbot using voice, cross-over to different languages during conversations!">
                 <div class="book-title">SmartTechAssist's Voicebot</div>
                 <div class="book-description">A multilingual, voice-first AI chatbot </div>
+                <div style="margin-top: 6px;">
+                    <a href="https://voicebot.smarttechassist.com/" target="_blank" style="font-size: 0.8em; color: #4b0082; text-decoration: none;">
+                    🔗 Try the App
+                    </a>
+                </div>
+            </a>
+            <a href="https://smartpetinsurefinder.smarttechassist.com/" target="_blank" class="book color-blue"
+                   title="A AI-Powered pet insurance plan recommender, customized for your pet!">
+                <div class="book-title">Pet Insurance Recommender</div>
+                <div class="book-description">Customized pet Insurance Search</div>
+                <div style="margin-top: 6px;">
+                    <a href="https://smartpetinsurefinder.smarttechassist.com" target="_blank" style="font-size: 0.8em; color: #4b0082; text-decoration: none;">
+                    🔗 Try the App
+                    </a>
+                </div>
             </a>
         </div>
     </div>
@@ -210,9 +239,9 @@
 
     <h2>AI Learning Resources/Interests</h2>
     <ul>
-        <li>Topic 1: Deep Learning for Natural Language Processing</li>
         <li>Topic 2: Reasoning and Logic in AI</li>
-        <li>Topic 3: Grounded AI</li>
-        </ul>
+        <li>Topic 3: Grounded/Auditable AI</li>
+        <li>Topic 3: Applied AI</li>
+    </ul>
 </body>
 </html>
