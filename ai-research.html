@@ -60,7 +60,7 @@
             border-radius: 2px;
         }
         .book {
-            width: 150px; /* Width of each book */
+            width: 200px; /* Width of each book */
             height: 200px; /* Height of each book */
             background-color: #8a2be2; /* Default book spine color (purple) */
             border: 2px solid #5d1a99; /* Darker border for the spine */
@@ -109,9 +109,9 @@
             box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
         }
         .book-title {
-            color: #fff; /* White text for title */
+            color: #ffffff; /* White text for title */
             font-weight: bold;
-            font-size: 1em;
+            font-size: 1.2em;
             margin-bottom: 5px;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -121,7 +121,7 @@
         }
         .book-description {
             color: #eee; /* Lighter text for description */
-            font-size: 0.8em;
+            font-size: 0.7em;
             /* REMOVE OR COMMENT OUT THESE LINES TO ALLOW WRAPPING: */
             /* white-space: nowrap; */
             /* overflow: hidden; */
@@ -186,7 +186,8 @@
                     target="_blank" class="book color-blue" title="A symbolic AI approach to solve logic puzzles via grounded reasoning.">
                     <span class="beta-badge">BETA</span>
                     <div class="book-title">Puzzle Solver AI</div>
-                    <div class="book-description">Using AI with grounding to solve "Man In Boat" puzzles</div>
+                    <hr>
+                    <div class="book-description">Orchestrating LLMS with grounding to solve "Man In Boat" puzzles</div>
                     <div class="book-description" style="margin-top: 10px;"><Strong>(Blog)</Strong></div>
                 </a>
                 <div style="margin-top: 6px;">
@@ -201,6 +202,7 @@
                     title="Interactive app showing 3D scene generation and collision detection using symbolic AI. Click to learn more!">
                     <span class="beta-badge">DEMO</span>
                     <div class="book-title">SpatialScene</div>
+                    <hr>
                     <div class="book-description">
                         Visualize 3D Scenes from Natural Language.
                     </div>
@@ -221,8 +223,9 @@
             <div style="text-align: center;">
                 <a href="https://medium.com/@nilanjan.kar/introducing-smarttechassists-voicebot-voice-first-ai-for-everyone-2572883ea831" target="_blank" class="book color-green"
                     title="Interact with multi-lingual chatbot using voice, cross-over to different languages during conversations!">
-                    <div class="book-title">SmartTechAssist's Voicebot</div>
-                    <div class="book-description">A multilingual, voice-first AI chatbot </div>
+                    <div class="book-title">Voicebot</div>
+                    <hr>
+                    <div class="book-description">Real-time multilingual voice → LLM → Voice Pipeline </div>
                     <div class="book-description" style="margin-top: 10px;"><Strong>(Blog)</Strong></div>
                     <a href="https://voicebot.smarttechassist.com/" target="_blank" class="try-app-link">
                         🔗 Try the App
@@ -235,8 +238,17 @@
                     title="A AI-Powered pet insurance plan recommender, customized for your pet!">
                     <span class="beta-badge">DEMO</span>
                     <div class="book-title">Pet Insurance Recommender</div>
-                    <div class="book-description">Customized pet Insurance Search</div>
-
+                    <hr>
+                    <div class="book-description">AI-powered Customized pet Insurance Search</div>
+                </a>
+            </div>
+            <div style="text-align: center;">
+                <a href="https://smartpetinsurefinder.smarttechassist.com/" target="_blank" class="book color-blue"
+                    title="A AI-Powered pet insurance plan recommender, customized for your pet!">
+                    <span class="beta-badge">DEMO</span>
+                    <div class="book-title">Pet Insurance Claims Automation</div>
+                    <hr>
+                    <div class="book-description">Claim Image/pdf → Validation pipeline w/ anamoly detection → Processing</div>
                 </a>
             </div>
         </div>
